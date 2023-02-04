@@ -1,17 +1,7 @@
 ## Hyperledger Fabric ERC20 chaincode deployment
 
-Many thanks to Akshay Kurhekar and his article [https://medium.com/@akshay.kurhekar1014662/erc20-token-implementation-in-hyperledger-fabric-103cbfc21379] to simplify this process.
 
-Hi, all very happy to share this new approach to create ERC20 Token using Hyperledger Fabric for private blockchain.
-
-### Now, lets get started.
-
-we will first look into the arc of Hyplerledger Fabric (HLF).
-then will see development setup along with creating chaincode for our Dapp.
-
-
-
-### 1. up network
+### 1. Initialize HLF network and deploy erc20Token chaincode
 
     check fabric binary:
     run from any folder
@@ -32,7 +22,7 @@ then will see development setup along with creating chaincode for our Dapp.
     Now, lets move towards application part
 
 `    $ cd api_server` 
-`    $ npm install`
+`    $ npm install` (I used node version 12.22.0)
 
 `    $ node registerAdmin.js`
 
@@ -90,3 +80,15 @@ Run Receiver script to check Dina's balance:
 `   $ ./networkDown.sh` 
 
 ### Helpful articles
+
+Pruning Docker images and volumes for a clean HLF install:
+
+    https://stackoverflow.com/questions/52583128/how-do-i-resolve-this-error-error-failed-to-create-deliver-client-failed-to-c
+
+Install HLF Docker images (be sure to keep `fabric` and `fabric-ca` consistent):
+
+    https://hyperledger-fabric.readthedocs.io/en/release-2.2/install.html
+
+### Credit to Akshay
+
+Many thanks to Akshay Kurhekar and his article [https://medium.com/@akshay.kurhekar1014662/erc20-token-implementation-in-hyperledger-fabric-103cbfc21379] to simplify this process.
