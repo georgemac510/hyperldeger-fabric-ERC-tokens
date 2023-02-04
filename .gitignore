@@ -1,0 +1,7 @@
+.vscode
+.history
+node_modules
+wallet
+package-lock.json
+
+
